@@ -18,14 +18,24 @@ class PlatformSerializer(serializers.ModelSerializer):
     class Meta:
         model = Platform
         fields = '__all__'
-    
-
+            
 class GameSerializer(serializers.ModelSerializer):
     reviews = ReviewSerializer(many=True, read_only=True)
-    genres = serializers.StringRelatedField(many=True)
-    platforms = serializers.StringRelatedField(many=True)
-    developer = serializers.StringRelatedField()
     
+    platforms = serializers.SlugRelatedField(
+        queryset=Platform.objects.all(),
+        slug_field='name',  
+        many=True  # Indica que es una relación many-to-many
+    )
+    developer = serializers.SlugRelatedField(
+        queryset=Developer.objects.all(),
+        slug_field='name'  
+    )
+    genres = serializers.SlugRelatedField(
+        queryset=Genre.objects.all(),
+        slug_field='name',
+        many=True  
+    )
     class Meta:
         model = Game
         fields = '__all__'

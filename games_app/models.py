@@ -1,7 +1,7 @@
 from django.db import models
 
 class Developer (models.Model):
-    name = models.CharField(max_length=30)
+    name = models.CharField(max_length=30, unique=True)
     description = models.CharField(max_length=200)
     country = models.CharField(max_length=30)
     web_site = models.CharField(max_length=50)
@@ -10,12 +10,12 @@ class Developer (models.Model):
         return self.name + ' - ' + self.country
     
 class Genre (models.Model):
-    name = models.CharField(max_length=30)
+    name = models.CharField(max_length=30, unique=True)
     def __str__(self):
         return self.name
     
 class Platform (models.Model):
-    name = models.CharField(max_length=30)
+    name = models.CharField(max_length=30, unique=True)
     def __str__(self):
         return self.name
     

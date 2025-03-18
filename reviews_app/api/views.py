@@ -19,9 +19,9 @@ class ReviewCreateView(generics.CreateAPIView):
         pk = self.kwargs['pk']
         game = Game.objects.get(pk=pk)
         review_user = self.request.user
-        review_queryset = Review.objects.filter(game=game)
+        review_queryset = Review.objects.filter(game=game,user=review_user)
         if review_queryset.exists():
-            raise ValidationError('You have already reviewd this movie')
+            raise ValidationError('You have already reviewd this game')
         serializer.save(game=game, user=review_user)
 class ReviewDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Review.objects.all()

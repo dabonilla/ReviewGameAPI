@@ -1,8 +1,9 @@
 from games_app.models import Genre,Game,Platform, Developer
 from games_app.api.serializers import GenreSerializer,PlatformSerializer, GameSerializer, DeveloperSerializer
 from rest_framework import generics
-from games_app.api import permissions
-
+from games_app.api import permissions, pagination
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import filters
 #DEVELOPER
 class DeveloperListView(generics.ListCreateAPIView):
     serializer_class = DeveloperSerializer
@@ -36,6 +37,10 @@ class GameListView(generics.ListCreateAPIView):
     serializer_class = GameSerializer
     queryset = Game.objects.all()
     permission_classes = [permissions.AdminOrReadOnly]
+    filter_backends = [filters.SearchFilter,DjangoFilterBackend]
+    filterset_fields = ['genres__name','platforms__name', 'developer__name']
+    search_fields = ['name']
+    pagination_class = pagination.GamePagination
 class GameDetailView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = GameSerializer
     queryset = Game.objects.all()

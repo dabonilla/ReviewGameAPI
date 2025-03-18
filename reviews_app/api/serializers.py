@@ -5,5 +5,5 @@ class ReviewSerializer(serializers.ModelSerializer):
     #game = serializers.StringRelatedField(read_only=True)
     class Meta:
         model = Review
-        fields = '__all__'
-        
+        exclude = ('game',)
+        read_only_fields = ['user']
