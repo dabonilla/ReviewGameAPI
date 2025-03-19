@@ -4,11 +4,14 @@ from rest_framework import generics
 from games_app.api import permissions, pagination
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters
+from rest_framework_simplejwt.authentication import JWTAuthentication
+from rest_framework.permissions import IsAuthenticated
 #DEVELOPER
 class DeveloperListView(generics.ListCreateAPIView):
     serializer_class = DeveloperSerializer
     queryset = Developer.objects.all()
     permission_classes = [permissions.AdminOrReadOnly]
+    
 class DeveloperDetailView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = DeveloperSerializer
     queryset = Developer.objects.all()
@@ -21,7 +24,7 @@ class GenreListView(generics.ListCreateAPIView):
 class GenreDetailView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = GenreSerializer
     queryset = Genre.objects.all()
-    
+    permission_classes = [permissions.AdminOrReadOnly]
 # PLATFORM 
 class PlatformListView(generics.ListCreateAPIView):
     serializer_class = PlatformSerializer

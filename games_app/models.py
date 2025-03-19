@@ -26,6 +26,8 @@ class Game (models.Model):
     genres = models.ManyToManyField(Genre)
     platforms = models.ManyToManyField(Platform)
     developer = models.ForeignKey(Developer, on_delete=models.CASCADE, related_name='games')
+    avg_rating = models.FloatField(default=0)
+    number_rating = models.IntegerField(default=0)
     
     def __str__(self):
         return self.name +' - '+ str(self.developer)

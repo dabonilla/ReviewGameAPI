@@ -3,10 +3,14 @@ from rest_framework import generics
 from reviews_app.api.serializers import ReviewSerializer
 from reviews_app.models import Review
 from games_app.models import Game
-from games_app.api import permissions
-
+from games_app.api import permissions, pagination
+from rest_framework.permissions import IsAuthenticated
+from rest_framework import filters
 class ReviewListView(generics.ListAPIView):
     serializer_class = ReviewSerializer
+    pagination_class = pagination.ReviewsPagination
+    filter_backends = [filters.OrderingFilter]
+    ordering_fields = ['rating']
     def get_queryset(self):
         pk = self.kwargs['pk']
         return Review.objects.filter(game=pk)
@@ -22,8 +26,16 @@ class ReviewCreateView(generics.CreateAPIView):
         review_queryset = Review.objects.filter(game=game,user=review_user)
         if review_queryset.exists():
             raise ValidationError('You have already reviewd this game')
+        if game.number_rating == 0:
+            game.avg_rating = serializer.validated_data['rating']
+        else:
+            game.avg_rating = (game.avg_rating + serializer.validated_data['rating'])/2
+        game.number_rating = game.number_rating + 1
+        game.save()
         serializer.save(game=game, user=review_user)
+        
 class ReviewDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
     permission_classes = [permissions.ReviewUserOrReadOnly]
+    
