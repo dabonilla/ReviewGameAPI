@@ -1,6 +1,27 @@
 from django.urls import path
-from games_app.api.views import GenreListView,GenreDetailView,PlatformListView,PlatformDetailView, GameListView,GameDetailView,DeveloperDetailView,DeveloperListView
+from .views import (
+    DeveloperListView, DeveloperDetailView,
+    GenreListView, GenreDetailView,
+    PlatformListView, PlatformDetailView,
+    GameListView, GameDetailView
+)
+"""
+Rutas para Developer:
+  - 'developer/': Listar y crear desarrolladores (DeveloperListView).
+  - 'developer/<int:pk>': Detalles, actualizar o eliminar un desarrollador (DeveloperDetailView).
 
+Rutas para Genre:
+  - 'genre/': Listar y crear géneros (GenreListView).
+  - 'genre/<int:pk>': Detalles, actualizar o eliminar un género (GenreDetailView).
+
+Rutas para Platform:
+  - 'platform/': Listar y crear plataformas (PlatformListView).
+  - 'platform/<int:pk>': Detalles, actualizar o eliminar una plataforma (PlatformDetailView).
+
+Rutas para Game:
+  - 'game/': Listar y crear juegos (GameListView). Incluye filtros y paginación.
+  - 'game/<int:pk>': Detalles, actualizar o eliminar un juego (GameDetailView).
+"""
 urlpatterns = [
     path('developer/',DeveloperListView.as_view(),name='developer-list'),
     path('developer/<int:pk>',DeveloperDetailView.as_view(),name='developer-detail'),
