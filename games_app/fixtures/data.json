@@ -1,0 +1,663 @@
+[
+  {
+    "model": "games_app.Developer",
+    "fields": {
+      "name": "CD Projekt Red",
+      "description": "CD Projekt Red es una desarrolladora de videojuegos polaca conocida por su serie The Witcher y el aclamado Cyberpunk 2077. Son reconocidos por su enfoque en narrativas profundas y mundos abiertos detallados.",
+      "country": "Polonia",
+      "web_site": "https://www.cdprojektred.com/"
+    }
+  },
+  {
+    "model": "games_app.Developer",
+    "fields": {
+      "name": "Naughty Dog",
+      "description": "Naughty Dog es una desarrolladora de videojuegos estadounidense conocida por sus franquicias Crash Bandicoot, Uncharted y The Last of Us. Son reconocidos por su excelencia en narrativa y gráficos.",
+      "country": "Estados Unidos",
+      "web_site": "https://www.naughtydog.com/"
+    }
+  },
+  {
+    "model": "games_app.Developer",
+    "fields": {
+      "name": "Rockstar Games",
+      "description": "Rockstar Games es una desarrolladora y publicadora de videojuegos conocida por sus franquicias Grand Theft Auto, Red Dead Redemption y Max Payne. Son famosos por sus mundos abiertos y atención al detalle.",
+      "country": "Estados Unidos",
+      "web_site": "https://www.rockstargames.com/"
+    }
+  },
+  {
+    "model": "games_app.Developer",
+    "fields": {
+      "name": "Ubisoft",
+      "description": "Ubisoft es una desarrolladora y publicadora de videojuegos francesa conocida por sus franquicias Assassin's Creed, Far Cry y Watch Dogs. Son reconocidos por sus mundos abiertos y mecánicas de juego innovadoras.",
+      "country": "Francia",
+      "web_site": "https://www.ubisoft.com/"
+    }
+  },
+  {
+    "model": "games_app.Developer",
+    "fields": {
+      "name": "Blizzard Entertainment",
+      "description": "Blizzard Entertainment es una desarrolladora de videojuegos estadounidense conocida por sus franquicias Warcraft, Diablo y StarCraft. Son famosos por su enfoque en juegos de estrategia y rol.",
+      "country": "Estados Unidos",
+      "web_site": "https://www.blizzard.com/"
+    }
+  },
+  {
+    "model": "games_app.Developer",
+    "fields": {
+      "name": "Square Enix",
+      "description": "Square Enix es una desarrolladora y publicadora de videojuegos japonesa conocida por sus franquicias Final Fantasy, Dragon Quest y Kingdom Hearts. Son reconocidos por sus narrativas épicas y gráficos impresionantes.",
+      "country": "Japón",
+      "web_site": "https://www.square-enix.com/"
+    }
+  },
+  {
+    "model": "games_app.Developer",
+    "fields": {
+      "name": "Bethesda Game Studios",
+      "description": "Bethesda Game Studios es una desarrolladora de videojuegos estadounidense conocida por sus franquicias The Elder Scrolls y Fallout. Son famosos por sus mundos abiertos y libertad de exploración.",
+      "country": "Estados Unidos",
+      "web_site": "https://bethesda.net/"
+    }
+  },
+  {
+    "model": "games_app.Developer",
+    "fields": {
+      "name": "FromSoftware",
+      "description": "FromSoftware es una desarrolladora de videojuegos japonesa conocida por sus franquicias Dark Souls, Bloodborne y Sekiro. Son reconocidos por su dificultad desafiante y diseño de niveles intrincado.",
+      "country": "Japón",
+      "web_site": "https://www.fromsoftware.jp/"
+    }
+  },
+  {
+    "model": "games_app.Developer",
+    "fields": {
+      "name": "Capcom",
+      "description": "Capcom es una desarrolladora y publicadora de videojuegos japonesa conocida por sus franquicias Resident Evil, Street Fighter y Monster Hunter. Son famosos por sus juegos de acción y horror.",
+      "country": "Japón",
+      "web_site": "https://www.capcom.com/"
+    }
+  },
+  {
+    "model": "games_app.Developer",
+    "fields": {
+      "name": "Electronic Arts (EA)",
+      "description": "Electronic Arts es una desarrolladora y publicadora de videojuegos estadounidense conocida por sus franquicias FIFA, Madden NFL y The Sims. Son reconocidos por sus juegos deportivos y de simulación.",
+      "country": "Estados Unidos",
+      "web_site": "https://www.ea.com/"
+    }
+  },
+  {
+    "model": "games_app.Developer",
+    "fields": {
+      "name": "Nintendo",
+      "description": "Nintendo es una desarrolladora y publicadora de videojuegos japonesa conocida por sus franquicias Mario, Zelda y Pokémon. Son famosos por su innovación en hardware y diseño de juegos.",
+      "country": "Japón",
+      "web_site": "https://www.nintendo.com/"
+    }
+  },
+  {
+    "model": "games_app.Genre",
+    "fields": {
+      "name": "Acción"
+    }
+  },
+  {
+    "model": "games_app.Genre",
+    "fields": {
+      "name": "Aventura"
+    }
+  },
+  {
+    "model": "games_app.Genre",
+    "fields": {
+      "name": "RPG"
+    }
+  },
+  {
+    "model": "games_app.Genre",
+    "fields": {
+      "name": "Estrategia"
+    }
+  },
+  {
+    "model": "games_app.Genre",
+    "fields": {
+      "name": "Deportes"
+    }
+  },
+  {
+    "model": "games_app.Genre",
+    "fields": {
+      "name": "Simulación"
+    }
+  },
+  {
+    "model": "games_app.Genre",
+    "fields": {
+      "name": "Plataformas"
+    }
+  },
+  {
+    "model": "games_app.Genre",
+    "fields": {
+      "name": "Shooter"
+    }
+  },
+  {
+    "model": "games_app.Genre",
+    "fields": {
+      "name": "Puzzle"
+    }
+  },
+  {
+    "model": "games_app.Genre",
+    "fields": {
+      "name": "Horror"
+    }
+  },
+  {
+    "model": "games_app.Genre",
+    "fields": {
+      "name": "MMORPG"
+    }
+  },
+  {
+    "model": "games_app.Platform",
+    "fields": {
+      "name": "Xbox"
+    }
+  },
+  {
+    "model": "games_app.Platform",
+    "fields": {
+      "name": "PlayStation"
+    }
+  },
+  {
+    "model": "games_app.Platform",
+    "fields": {
+      "name": "Nintendo Switch"
+    }
+  },
+  {
+    "model": "games_app.Platform",
+    "fields": {
+      "name": "PC"
+    }
+  },
+  {
+    "model": "games_app.Platform",
+    "fields": {
+      "name": "iOS"
+    }
+  },
+  {
+    "model": "games_app.Platform",
+    "fields": {
+      "name": "Android"
+    }
+  },
+  {
+    "model": "games_app.Platform",
+    "fields": {
+      "name": "Xbox Series X|S"
+    }
+  },
+  {
+    "model": "games_app.Platform",
+    "fields": {
+      "name": "PlayStation 5"
+    }
+  },
+  {
+    "model": "games_app.Platform",
+    "fields": {
+      "name": "Nintendo 3DS"
+    }
+  },
+  {
+    "model": "games_app.Platform",
+    "fields": {
+      "name": "PlayStation 4"
+    }
+  },
+  {
+    "model": "games_app.Platform",
+    "fields": {
+      "name": "Xbox One"
+    }
+  },
+  {
+    "model": "games_app.Game",
+    "fields": {
+      "name": "Super Mario Bros. Wonder",
+      "description": "¡Únete a Mario y sus amigos en una nueva y maravillosa aventura de desplazamiento lateral en 2D! Te aguardan sorpresas por doquier en Super Mario Bros. Wonder para Nintendo Switch.",
+      "launch_date": "2024-03-10T06:00:00Z",
+      "genres": [
+        1,
+        2
+      ],
+      "platforms": [
+        3,
+        4
+      ],
+      "developer": 11
+    }
+  },
+  {
+    "model": "games_app.Game",
+    "fields": {
+      "name": "The Witcher 3: Wild Hunt",
+      "description": "The Witcher 3: Wild Hunt es un juego de rol de mundo abierto desarrollado por CD Projekt Red. Sigue la historia de Geralt de Rivia en su búsqueda para encontrar a su hija adoptiva.",
+      "launch_date": "2015-05-19T06:00:00Z",
+      "genres": [
+        3,
+        2
+      ],
+      "platforms": [
+        5,
+        6,
+        7
+      ],
+      "developer": 2
+    }
+  },
+  {
+    "model": "games_app.Game",
+    "fields": {
+      "name": "The Last of Us Part II",
+      "description": "The Last of Us Part II es un juego de acción y aventura desarrollado por Naughty Dog. Sigue la historia de Ellie en un mundo post-apocalíptico lleno de peligros.",
+      "launch_date": "2020-06-19T06:00:00Z",
+      "genres": [
+        4,
+        2
+      ],
+      "platforms": [
+        6
+      ],
+      "developer": 3
+    }
+  },
+  {
+    "model": "games_app.Game",
+    "fields": {
+      "name": "Cyberpunk 2077",
+      "description": "Cyberpunk 2077 es un juego de rol de acción desarrollado por CD Projekt Red. Explora la ciudad futurista de Night City y descubre sus secretos.",
+      "launch_date": "2020-12-10T06:00:00Z",
+      "genres": [
+        3,
+        4
+      ],
+      "platforms": [
+        5,
+        6,
+        7
+      ],
+      "developer": 2
+    }
+  },
+  {
+    "model": "games_app.Game",
+    "fields": {
+      "name": "Assassin's Creed Valhalla",
+      "description": "Assassin's Creed Valhalla es un juego de acción y aventura desarrollado por Ubisoft. Juega como Eivor, un vikingo en busca de un nuevo hogar en Inglaterra.",
+      "launch_date": "2020-11-10T06:00:00Z",
+      "genres": [
+        4,
+        2
+      ],
+      "platforms": [
+        5,
+        6,
+        7
+      ],
+      "developer": 4
+    }
+  },
+  {
+    "model": "games_app.Game",
+    "fields": {
+      "name": "Final Fantasy VII Remake",
+      "description": "Final Fantasy VII Remake es un juego de rol desarrollado por Square Enix. Revive la clásica historia de Cloud y sus amigos en Midgar con gráficos modernos.",
+      "launch_date": "2020-04-10T06:00:00Z",
+      "genres": [
+        3
+      ],
+      "platforms": [
+        6
+      ],
+      "developer": 5
+    }
+  },
+  {
+    "model": "games_app.Game",
+    "fields": {
+      "name": "The Elder Scrolls V: Skyrim",
+      "description": "The Elder Scrolls V: Skyrim es un juego de rol de mundo abierto desarrollado por Bethesda Game Studios. Explora el vasto mundo de Skyrim y descubre sus secretos.",
+      "launch_date": "2011-11-11T06:00:00Z",
+      "genres": [
+        3,
+        2
+      ],
+      "platforms": [
+        5,
+        6,
+        7
+      ],
+      "developer": 6
+    }
+  },
+  {
+    "model": "games_app.Game",
+    "fields": {
+      "name": "Dark Souls III",
+      "description": "Dark Souls III es un juego de rol de acción desarrollado por FromSoftware. Enfrenta desafíos extremos en un mundo oscuro y lleno de peligros.",
+      "launch_date": "2016-04-12T06:00:00Z",
+      "genres": [
+        3,
+        4
+      ],
+      "platforms": [
+        5,
+        6,
+        7
+      ],
+      "developer": 7
+    }
+  },
+  {
+    "model": "games_app.Game",
+    "fields": {
+      "name": "Resident Evil Village",
+      "description": "Resident Evil Village es un juego de horror y acción desarrollado por Capcom. Sigue la historia de Ethan Winters en un pueblo lleno de misterios y terror.",
+      "launch_date": "2021-05-07T06:00:00Z",
+      "genres": [
+        8,
+        4
+      ],
+      "platforms": [
+        5,
+        6,
+        7
+      ],
+      "developer": 8
+    }
+  },
+  {
+    "model": "games_app.Game",
+    "fields": {
+      "name": "FIFA 23",
+      "description": "FIFA 23 es un juego de deportes desarrollado por Electronic Arts. Disfruta del fútbol con gráficos realistas y mecánicas mejoradas.",
+      "launch_date": "2022-09-30T06:00:00Z",
+      "genres": [
+        9
+      ],
+      "platforms": [
+        5,
+        6,
+        7
+      ],
+      "developer": 9
+    }
+  },
+  {
+    "model": "games_app.Game",
+    "fields": {
+      "name": "The Legend of Zelda: Breath of the Wild",
+      "description": "The Legend of Zelda: Breath of the Wild es un juego de acción y aventura desarrollado por Nintendo. Explora el vasto mundo de Hyrule y descubre sus secretos.",
+      "launch_date": "2017-03-03T06:00:00Z",
+      "genres": [
+        2,
+        4
+      ],
+      "platforms": [
+        3
+      ],
+      "developer": 12
+    }
+  },
+  {
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 2,
+        "game": 2,
+        "title": "Increíble experiencia",
+        "review": "El juego es muy bueno, me encanta. Los gráficos son impresionantes.",
+        "created_at": "2025-03-19T00:42:44.996896Z",
+        "updated_at": "2025-03-19T00:42:44.996896Z",
+        "rating": 5
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 3,
+        "game": 3,
+        "title": "Muy divertido",
+        "review": "Me encantó la jugabilidad y la historia. ¡Totalmente recomendado!",
+        "created_at": "2025-03-20T10:15:30.996896Z",
+        "updated_at": "2025-03-20T10:15:30.996896Z",
+        "rating": 4
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 4,
+        "game": 4,
+        "title": "Bueno, pero no excelente",
+        "review": "El juego es entretenido, pero le falta algo para ser perfecto.",
+        "created_at": "2025-03-21T14:20:10.996896Z",
+        "updated_at": "2025-03-21T14:20:10.996896Z",
+        "rating": 3
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 5,
+        "game": 5,
+        "title": "Una obra maestra",
+        "review": "Este juego es simplemente increíble. No puedo dejar de jugarlo.",
+        "created_at": "2025-03-22T18:30:45.996896Z",
+        "updated_at": "2025-03-22T18:30:45.996896Z",
+        "rating": 5
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 6,
+        "game": 6,
+        "title": "No cumplió mis expectativas",
+        "review": "Esperaba más de este juego. La historia es un poco aburrida.",
+        "created_at": "2025-03-23T22:45:50.996896Z",
+        "updated_at": "2025-03-23T22:45:50.996896Z",
+        "rating": 2
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 2,
+        "game": 7,
+        "title": "Muy adictivo",
+        "review": "No puedo parar de jugar. ¡Es demasiado divertido!",
+        "created_at": "2025-03-24T08:10:15.996896Z",
+        "updated_at": "2025-03-24T08:10:15.996896Z",
+        "rating": 5
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 3,
+        "game": 8,
+        "title": "Buen diseño",
+        "review": "Los gráficos y el diseño del juego son impresionantes.",
+        "created_at": "2025-03-25T12:25:20.996896Z",
+        "updated_at": "2025-03-25T12:25:20.996896Z",
+        "rating": 4
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 4,
+        "game": 9,
+        "title": "Regular",
+        "review": "El juego está bien, pero no es nada del otro mundo.",
+        "created_at": "2025-03-26T16:40:30.996896Z",
+        "updated_at": "2025-03-26T16:40:30.996896Z",
+        "rating": 3
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 5,
+        "game": 10,
+        "title": "Increíble",
+        "review": "Este juego superó todas mis expectativas. ¡Lo amo!",
+        "created_at": "2025-03-27T20:55:40.996896Z",
+        "updated_at": "2025-03-27T20:55:40.996896Z",
+        "rating": 5
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 6,
+        "game": 11,
+        "title": "No me gustó",
+        "review": "El juego no es para mí. No me enganchó en absoluto.",
+        "created_at": "2025-03-28T09:05:50.996896Z",
+        "updated_at": "2025-03-28T09:05:50.996896Z",
+        "rating": 1
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 2,
+        "game": 3,
+        "title": "Muy bueno",
+        "review": "El juego es muy entretenido. Lo recomiendo.",
+        "created_at": "2025-03-29T13:20:10.996896Z",
+        "updated_at": "2025-03-29T13:20:10.996896Z",
+        "rating": 4
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 3,
+        "game": 4,
+        "title": "Fantástico",
+        "review": "Este juego es una joya. No te lo puedes perder.",
+        "created_at": "2025-03-30T17:35:20.996896Z",
+        "updated_at": "2025-03-30T17:35:20.996896Z",
+        "rating": 5
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 4,
+        "game": 5,
+        "title": "No está mal",
+        "review": "El juego es decente, pero no es lo mejor que he jugado.",
+        "created_at": "2025-03-31T21:50:30.996896Z",
+        "updated_at": "2025-03-31T21:50:30.996896Z",
+        "rating": 3
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 5,
+        "game": 6,
+        "title": "Muy recomendado",
+        "review": "Este juego es increíble. No te arrepentirás de jugarlo.",
+        "created_at": "2025-04-01T08:05:40.996896Z",
+        "updated_at": "2025-04-01T08:05:40.996896Z",
+        "rating": 5
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 6,
+        "game": 7,
+        "title": "No me convenció",
+        "review": "El juego no cumplió con lo que esperaba. No lo recomiendo.",
+        "created_at": "2025-04-02T12:20:50.996896Z",
+        "updated_at": "2025-04-02T12:20:50.996896Z",
+        "rating": 2
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 2,
+        "game": 8,
+        "title": "Muy divertido",
+        "review": "Este juego es muy entretenido. Lo jugaría una y otra vez.",
+        "created_at": "2025-04-03T16:35:10.996896Z",
+        "updated_at": "2025-04-03T16:35:10.996896Z",
+        "rating": 4
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 3,
+        "game": 9,
+        "title": "Increíble",
+        "review": "Este juego es una obra maestra. No puedo dejar de jugarlo.",
+        "created_at": "2025-04-04T20:50:20.996896Z",
+        "updated_at": "2025-04-04T20:50:20.996896Z",
+        "rating": 5
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 4,
+        "game": 10,
+        "title": "Regular",
+        "review": "El juego está bien, pero no es nada especial.",
+        "created_at": "2025-04-05T09:05:30.996896Z",
+        "updated_at": "2025-04-05T09:05:30.996896Z",
+        "rating": 3
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 5,
+        "game": 11,
+        "title": "Muy bueno",
+        "review": "Este juego es muy entretenido. Lo recomiendo.",
+        "created_at": "2025-04-06T13:20:40.996896Z",
+        "updated_at": "2025-04-06T13:20:40.996896Z",
+        "rating": 4
+    }
+},
+{
+    "model": "reviews_app.Review",
+    "fields": {
+        "user": 6,
+        "game": 2,
+        "title": "No me gustó",
+        "review": "El juego no es para mí. No me enganchó en absoluto.",
+        "created_at": "2025-04-07T17:35:50.996896Z",
+        "updated_at": "2025-04-07T17:35:50.996896Z",
+        "rating": 1
+    }
+}
+
+]

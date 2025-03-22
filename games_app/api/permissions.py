@@ -8,7 +8,7 @@ class AdminOrReadOnly(permissions.IsAdminUser):
     Methods:
         has_permission(request, view): Verifica si el usuario tiene permiso para la solicitud.
     """
-    def has_permission(self, request):
+    def has_permission(self, request,view):
         """
         Verifica si el usuario tiene permiso para realizar la solicitud.
 
@@ -28,7 +28,7 @@ class ReviewUserOrReadOnly(permissions.BasePermission):
     Methods:
         has_object_permission(request, view, obj): Verifica si el usuario tiene permiso para la solicitud.
     """
-    def has_object_permission(self, request, obj):
+    def has_object_permission(self, request,view, obj):
         """
         Verifica si el usuario tiene permiso para realizar la solicitud sobre el objeto específico.
 
